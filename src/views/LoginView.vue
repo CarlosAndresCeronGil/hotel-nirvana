@@ -10,6 +10,7 @@
       <input type="text" id="captcha-answer" />
     </div>
     <button type="submit" id="login-button">Iniciar Sesión</button>
+    <router-link to="/forgot-password">Recuperar contraseña</router-link>
   </div>
 </template>
 
@@ -41,6 +42,7 @@ export default {
 #login-button {
   font-size: 20px;
   margin-top: 10px;
+  margin-right: 10px;
   background-color: #ffb703;
   border-radius: 5px;
 }

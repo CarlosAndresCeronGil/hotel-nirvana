@@ -1,7 +1,9 @@
 <template>
   <div id="container">
     <p id="hotels-title">Hoteles</p>
+    <router-link to="/hotel">
     <HotelCard />
+    </router-link>
     <HotelCard />
     <HotelCard />
   </div>
@@ -28,5 +30,9 @@ export default {
 #hotels-title{
     font-size: 30px;
     color: #219ebc;
+}
+
+a {
+  text-decoration: none;
 }
 </style>

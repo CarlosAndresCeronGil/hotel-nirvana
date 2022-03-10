@@ -7,7 +7,7 @@
     </router-link>
     <div id="nav-links">
       <router-link to="/login">Iniciar Sesión</router-link>
-      <router-link to="/about">Registrarme</router-link>
+      <router-link to="/signup">Registrarme</router-link>
     </div>
   </nav>
   <router-view/>
