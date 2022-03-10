@@ -1,7 +1,14 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">
+      <div id="nav-image">
+        <img alt="Logo hotel" src="./assets/logo-hotel.png">
+      </div>
+    </router-link>
+    <div id="nav-links">
+      <router-link to="/login">Iniciar Sesión</router-link>
+      <router-link to="/about">Registrarme</router-link>
+    </div>
   </nav>
   <router-view/>
 </template>
@@ -15,16 +22,35 @@
   color: #2c3e50;
 }
 
+#nav-links {
+  float: right;
+  margin-top: 20px;
+}
+
+#nav-image {
+  float: left;
+}
+
+#nav-image img {
+  width: 100px;
+  height: 100px;
+  margin-top: -20px;
+}
+
 nav {
   padding: 30px;
+  background-color: #023047;
+  overflow: hidden;
+  height: 50px;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  padding: 5px;
+  color: #219ebc;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #8ecae6;
 }
 </style>
