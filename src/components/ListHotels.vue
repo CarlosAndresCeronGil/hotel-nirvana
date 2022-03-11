@@ -2,7 +2,7 @@
   <div id="container">
     <p id="hotels-title">Hoteles</p>
     <router-link to="/hotel">
-    <HotelCard />
+      <HotelCard />
     </router-link>
     <HotelCard />
     <HotelCard />
@@ -27,9 +27,10 @@ export default {
   margin-top: 10px;
 }
 
-#hotels-title{
-    font-size: 30px;
-    color: #219ebc;
+#hotels-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #219ebc;
 }
 
 a {
