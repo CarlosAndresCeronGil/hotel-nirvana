@@ -1,7 +1,7 @@
 <template>
   <div id="container-card">
     <div id="nav-image">
-      <img alt="Hotel 1" src="../assets/hotel1.jpg">
+      <img alt="Hotel 1" :src='imageUrl'>
     </div>
     <div id="information-card">
       <h3>Titulo hotel </h3>
@@ -14,7 +14,10 @@
 
 <script>
 export default {
-  name: 'HotelCard'
+  name: 'HotelCard',
+  props: {
+    imageUrl: null
+  }
 }
 </script>
 
